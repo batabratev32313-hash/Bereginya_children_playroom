@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Берегиня</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header__inner">
+    <div class="header__inner container">
+      <a class="logo">Берегиня
+        <!-- class="header__logo logo" -->
+        <!-- <img
+          class="logo__image"
+          src="./images/берегиня.jpg"
+          alt="Берегиня"
+          width="220" height="36" loading="lazy"
+        />         -->
+      </a>
+
+      <nav class="header__menu hidden-mobile">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#service">Услуги</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#tarifs">Тарифы</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="header__burger-button burger-button visible-mobile"
+        type="button"
+        onclick="mobileOverlay.showModal()">
+        <span class="visually-hidden">Open navigation menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section section--hidden-x container">
+      <div class="section__body">
+        <div class="hero">
+          <div class="hero__main">
+            <div class="hero__body">
+              <h1 class="hero__title" style="color:rgb(243, 57, 57)">
+                Великолепная площадка для проведения детских дней рождений
+              </h1>
+              <div class="hero__description">
+                <p class="puddle-bg">Клуб предлагает на своей базе организацию детских вечеринок и дискотек, есть возможность пригласить аниматоров и просто активно провести время с друзьями.</p>
+              </div>
+            </div>
+            <img
+              class="hero__image"
+              src="./images/Единорог.jpg"
+              alt=""
+              width="600" height="515" loading="lazy"
+              style="border-radius: 20px;"
+            />
+          </div>          
+        </div>
+      </div>
+    </section>
+   
+    <section class="section container">
+      <header class="section__header">
+        <h2 class="section__title puddle-bg" id="service">Услуги</h2>
+        <div class="section__description">
+          <p>Наш клуб создавался таким образом, что бы удовлетворить самые изысканные потребности маленьких клиентов</p>
+        </div>
+      </header>
+      <div class="section__body">
+        <div class="services">
+          <ul class="services__list grid grid--2">
+            <li class="services__item">
+              <article class="service-card">
+                <div class="service-card__body">
+                  <h3 class="service-card__title">
+                    <span class="puddle-bg" style="color:rgb(255, 53, 53)">Игровая комната</span>
+                  </h3>
+                  <a class="service-card__link" href="img_play.html">
+                    <span class="service-card__link-icon-wrapper">
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z" fill="#B9FF66"/>
+                      </svg>                      
+                    </span>
+                  </a>
+                </div>
+                <img
+                  class="service-card__image"
+                  src="./images/Игровая_комната.jpg"
+                  alt=""
+                  width="210" height="170" loading="lazy"
+                />
+              </article>
+            </li>
+            <li class="services__item">
+              <article class="service-card service-card--accent-bg">
+                <div class="service-card__body">
+                  <h3 class="service-card__title">
+                    <span class="puddle-bg puddle-bg--light">Оздоровительные процедуры</span>
+                  </h3>
+                  <a class="service-card__link" href="vital.html">
+                    <span class="service-card__link-icon-wrapper">
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z" fill="#B9FF66"/>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <img
+                  class="service-card__image"
+                  src="./images/процедуры/Процедуры.jpg"
+                  alt=""
+                  width="210" height="170" loading="lazy"
+                />
+              </article>
+            </li>
+            <li class="services__item">
+              <article class="service-card service-card--dark-bg">
+                <div class="service-card__body">
+                  <h3 class="service-card__title">
+                    <span class="puddle-bg puddle-bg--light">Соляная пещера</span>
+                  </h3>
+                  <a class="service-card__link service-card__link--light" href="salt_cave.html">
+                    <span class="service-card__link-icon-wrapper">
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z" fill="#B9FF66"/>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <img
+                  class="service-card__image"
+                  src="./images/Соляная пещера.jpg"
+                  alt=""
+                  width="210" height="170" loading="lazy"
+                />
+              </article>
+            </li>
+            <li class="services__item">
+              <article class="service-card">
+                <div class="service-card__body">
+                  <h3 class="service-card__title">
+                    <span class="puddle-bg" style="color:rgb(255, 53, 53)">Мероприятия</span>
+                  </h3>
+                  <a class="service-card__link" href="events.html">
+                    <span class="service-card__link-icon-wrapper">
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z" fill="#B9FF66"/>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <img
+                  class="service-card__image"                 
+                  src="./images/мероприятия.jpg"
+                  alt=""
+                  width="210" height="170" loading="lazy"
+                />
+              </article>
+            </li>            
+          </ul>          
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <header class="section__header">
+        <h2 class="section__title puddle-bg" id="tarifs">Наши услуги</h2>
+        <div class="section__description">
+        </div>
+      </header>
+      <div class="section__body">
+        <div class="process">
+          <ol class="process__list">
+            <li class="process__item">
+              <details class="process__accordion" open>
+                <summary class="process__accordion-header">
+                  <h3 class="process__accordion-title">Игровая комната</h3>
+                  <span class="process__accordion-indicator"></span>
+                </summary>
+                <div class="process__accordion-body">
+                  <p>
+                    Игровая комната разделена на две зоны:<br>
+Самая большая, порядка 100 м², предназначена для энергичных подвижных игр: 
+батут, лабиринт, горки, бассейн сшариками, детские спортивные тренажёры и многое другое.<br>
+Вторая зона «комната сенсорики», в этой комнате детям представляется возможность играть в различные конструкторы, 
+железную дорогу и многие другие игры развивающие фантазию, а так же мелкомоторные и крупномоторные навыки.<br><br>
+Посещение игровой комнаты возможно в двух вариантах:<br>
+Первый это безлимитное посещение в течении рабочего дня под вашим присмотром. Стоимость такого посещения составляет 800 рублей.<br>
+Второй, когда вы оставляете детей под нашим присмотром, в этом случае оплата почасовая, каждый час 500 рублей.
+                  </p>
+                </div>
+              </details>
+            </li>
+            <li class="process__item">
+              <details class="process__accordion">
+                <summary class="process__accordion-header">
+                  <h3 class="process__accordion-title">Оздоровительные процедуры</h3>
+                  <span class="process__accordion-indicator"></span>
+                </summary>
+                <div class="process__accordion-body">
+                  <p>
+                    Клуб «Берегиня» предоставляет возможность не только повеселиться на площадке, 
+                    но и поправить или улучшить здоровье.<br>
+                    В оздоровительные процедуры входит ЛФК, Стрейчинг на гамаках и Физопроцедуры.<br><br>
+                    ЛФК<br><br>
+Дети 7-18 лет	Групповое занятие	500 рублей<br>
+              Индивидуальное занятие	1000 рублей<br>
+Дети 3+	Индивидуальное занятие	1000 рублей<br>
+Взрослые	Групповое занятие	500 рублей<br><br>
+Стрейчинг на гамаках<br><br>
+Дети	Групповое занятие	500 рублей<br>
+      Индивидуальное занятие	1000 рублей<br>
+Взрослые	Групповое занятие	500 рублей<br><br>
+Физиопроцедуры<br><br>
+МАССАЖНОЕ КРЕСЛО YAMAGUCHI - 300р<br>
+МАССАЖ (для ног) YAMAGUCHI - 300р<br>
+МАССАЖНОЕ КРЕСЛО + МАССАЖ (для ног) YAMAGUCHI - 500р<br>
+ПРЕССОТЕРАПИЯ (ноги)	- 500р<br>
+ПРЕССОТЕРАПИЯ (1 рука)	- 200р<br>
+МАГНИТОТЕРАПИЯ	- 300р<br>
+КУФ-ТЕРАПИЯ	- 200р<br>
+ДАРСОНВАЛЬ (одна зона)	- 300р<br>
+ДЭНАС	- 300<br>
+ИМИТАТОР ВЕРХОВОЙ ЕЗДЫ (занятие 30-40 мин)	- 500р<br>
+КАРДИО-ДЭНАС - 300р
+                  </p>
+                </div>
+              </details>
+            </li>
+            <li class="process__item">
+              <details class="process__accordion">
+                <summary class="process__accordion-header">
+                  <h3 class="process__accordion-title">Соляная пещера</h3>
+                  <span class="process__accordion-indicator"></span>
+                </summary>
+                <div class="process__accordion-body">
+                  <p>
+                    Соляная пещера помогает восстанавливать защитные функции эпителия, уменьшает воспаление;
+Способствует отделению мокроты из бронхов, снимает раздражение;
+Улучшает состояние кожи, помогает при юношеской угревой сыпи, аллергических проявлениях, экземах;
+Укрепляет нервную систему, улучшает сон, снимает стресс<br><br>
+Дети с 2-9 лет – 300р<br>
+Дети с 10 до 18 лет – 500р<br>
+Взрослый – 700р<br>
+Взрослый + 1 ребенок (с 5 до 10 лет) – 1000р<br>
+Взрослый + 2 ребенка (с 5 до 10 лет) – 1300р<br>
+Взрослый + 3 ребенка (с 5 до 10 лет) – 1500р<br><br>
+Акция комбо<br><br>
+Взрослый + 2 ребенка + 2 на площадке – 2000р
+
+                  </p>
+                </div>
+              </details>
+            </li>
+            <li class="process__item">
+              <details class="process__accordion">
+                <summary class="process__accordion-header">
+                  <h3 class="process__accordion-title">Мероприятия</h3>
+                  <span class="process__accordion-indicator"></span>
+                </summary>
+                <div class="process__accordion-body">
+                  <p>За 2 года клуб «Берегиня» Вместе с вами отметили порядка 100 Дней Рождений.
+                    На регулярной основе на базе клуба проходят тематические театрализованные представления для детей всех возрастов<br><br>
+                    Проведение дней рождений:<br>
+Закрытое<br><br>
+При проведении закрытого мероприятия вы арендуете всю площадку только для своей компании.<br><br>
+Будние дни<br>
+С 10:00 до 14:00 - 10000 рублей<br>
+С 16:00 до 20:00 - 15000 рублей<br><br>
+Выходные дни<br>
+С 10:00 до 14:00 - 20000 рублей<br>
+С 16:00 до 20:00 - 20000 рублей<br><br>
+Открытое<br><br>
+При проведении открытого мероприятия площадку могут посещать другие гости клуба.<br>
+с ребенка 700 рублей<br>
+с взрослого 200 рублей<br>
+                  </p>
+                </div>
+              </details>
+            </li>
+            <li class="process__item">
+              <details class="process__accordion">
+                <summary class="process__accordion-header">
+                  <h3 class="process__accordion-title">АКЦИИ</h3>
+                  <span class="process__accordion-indicator"></span>
+                </summary>
+                <div class="process__accordion-body">
+                  <p> <img
+                  class="service-card__image"
+                  src="./images/акции/photo_2025-12-01_18-03-50.jpg"
+                  alt=""
+                  width="420" height="400" loading="lazy"
+                />
+                <!-- <section class="section container" >
+                    В ДЕКАБРЕ БЕРЕГИНЕ 3 ГОДА!<br>
+АКЦИЯ декабрь-январь!<br>
+В день рождения имениннику посещение бесплатно!
+</section> -->
+                    </p>
+                </div>
+              </details>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section container" >
+      <header class="section__header">
+        <h2 class="section__title puddle-bg">Отзывы</h2>
+        <div class="section__description">
+        </div>
+      </header>
+      <div class="section__body">
+        <div class="reviews">
+          <div class="reviews__slider">
+            <ul class="reviews__slider-list">
+              <li class="reviews__slider-item">
+                <blockquote class="review-card">
+                  <div class="review-card__body">
+                    <p>"Типа отзыв"</p>
+                  </div>
+                  <footer class="review-card__footer">
+                    <cite class="review-card__name">Имя Фамилия</cite>
+                  </footer>
+                </blockquote>
+              </li>
+              <li class="reviews__slider-item">
+                <blockquote class="review-card">
+                  <div class="review-card__body">
+                    <p>"Типа отзыв"</p>
+                  </div>
+                  <footer class="review-card__footer">
+                    <cite class="review-card__name">Имя Фамилия</cite>
+                  </footer>
+                </blockquote>
+              </li>
+              <li class="reviews__slider-item">
+                <blockquote class="review-card">
+                  <div class="review-card__body">
+                    <p>"Типа отзыв"</p>
+                  </div>
+                  <footer class="review-card__footer">
+                    <cite class="review-card__name">Имя Фамилия</cite>
+                  </footer>
+                </blockquote>
+              </li>
+              <li class="reviews__slider-item">
+                <blockquote class="review-card">
+                  <div class="review-card__body">
+                    <p>"Типа отзыв"</p>
+                  </div>
+                  <footer class="review-card__footer">
+                    <cite class="review-card__name">Имя Фамилия</cite>
+                  </footer>
+                </blockquote>
+              </li>
+              <li class="reviews__slider-item">
+                <blockquote class="review-card">
+                  <div class="review-card__body">
+                    <p>"Типа отзыв"</p>
+                  </div>
+                  <footer class="review-card__footer">
+                    <cite class="review-card__name">Имя Фамилия</cite>
+                  </footer>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+          <div class="reviews__actions">
+            <button
+              class="reviews__arrow-button"
+              type="button"
+              disabled
+            >
+              <span class="visually-hidden">Previous slide</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 13.5C22.8284 13.5 23.5 12.8284 23.5 12C23.5 11.1716 22.8284 10.5 22 10.5L22 13.5ZM0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM22 10.5L2 10.5L2 13.5L22 13.5L22 10.5Z" fill="white" fill-opacity="0.3"/>
+              </svg>
+            </button>
+
+            <div class="reviews__pagination pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <button
+                    class="pagination__button is-current"
+                    type="button"
+                  >
+                    <span class="visually-hidden">First slide</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z" fill="white"/>
+                    </svg>
+                  </button>
+                </li>
+                <li class="pagination__item">
+                  <button
+                    class="pagination__button"
+                    type="button"
+                  >
+                    <span class="visually-hidden">Second slide</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z" fill="white"/>
+                    </svg>
+                  </button>
+                </li>
+                <li class="pagination__item">
+                  <button
+                    class="pagination__button"
+                    type="button"
+                  >
+                    <span class="visually-hidden">Third slide</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z" fill="white"/>
+                    </svg>
+                  </button>
+                </li>
+                <li class="pagination__item">
+                  <button
+                    class="pagination__button"
+                    type="button"
+                  >
+                    <span class="visually-hidden">Fouth slide</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z" fill="white"/>
+                    </svg>
+                  </button>
+                </li>
+                <li class="pagination__item">
+                  <button
+                    class="pagination__button"
+                    type="button"
+                  >
+                    <span class="visually-hidden">Fifth slide</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z" fill="white"/>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <button
+              class="reviews__arrow-button"
+              type="button"
+            >
+              <span class="visually-hidden">Next slide</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM23.0607 13.0607C23.6464 12.4749 23.6464 11.5251 23.0607 10.9393L13.5147 1.3934C12.9289 0.807613 11.9792 0.807613 11.3934 1.3934C10.8076 1.97919 10.8076 2.92893 11.3934 3.51472L19.8787 12L11.3934 20.4853C10.8076 21.0711 10.8076 22.0208 11.3934 22.6066C11.9792 23.1924 12.9289 23.1924 13.5147 22.6066L23.0607 13.0607ZM2 13.5L22 13.5L22 10.5L2 10.5L2 13.5Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section id="slider-container">
+      <div id="top">            
+          <div id="frame">
+              <div id="slider">
+                  <p class="slider-image">bebebe</p>
+                  <p class="slider-image">bububu</p>
+                  <p class="slider-image">bababa</p>
+                  <p class="slider-image">bebebe</p>
+                  <p class="slider-image">bububu</p>
+                  <p class="slider-image">bababa</p>                
+              </div>
+          </div>  
+          
+          <section class="sec">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow arrow-left">
+              <path d="M22 13.5C22.8284 13.5 23.5 12.8284 23.5 12C23.5 11.1716 22.8284 10.5 22 10.5L22 13.5ZM0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM22 10.5L2 10.5L2 13.5L22 13.5L22 10.5Z" fill="white" fill-opacity="0.3"/>
+            </svg>
+            <div id="bottom" style="display: inline-block;"></div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow arrow-right">
+              <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM23.0607 13.0607C23.6464 12.4749 23.6464 11.5251 23.0607 10.9393L13.5147 1.3934C12.9289 0.807613 11.9792 0.807613 11.3934 1.3934C10.8076 1.97919 10.8076 2.92893 11.3934 3.51472L19.8787 12L11.3934 20.4853C10.8076 21.0711 10.8076 22.0208 11.3934 22.6066C11.9792 23.1924 12.9289 23.1924 13.5147 22.6066L23.0607 13.0607ZM2 13.5L22 13.5L22 10.5L2 10.5L2 13.5Z" fill="white"/>
+            </svg> 
+          </section>
+      </div>                 
+    </section> -->
+
+    <div style="position:relative;justify-self:center;overflow:hidden;">
+      <div style="position:relative;overflow:hidden;">
+        <a href="https://yandex.ru/maps/239/sochi/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Сочи</a>
+        <a href="https://yandex.ru/maps/239/sochi/?ll=39.338809%2C43.916674&mode=routes&rtext=43.915685%2C39.339659~43.916847%2C39.338189&rtt=pd&ruri=~&utm_medium=mapframe&utm_source=maps&z=18.69" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a>
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=39.338809%2C43.916674&mode=routes&rtext=43.915685%2C39.339659~43.916847%2C39.338189&rtt=pd&ruri=~&z=18.69" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer container">
+    <div class="footer__inner">
+      <div class="footer__navigation">
+        <a class="footer__logo logo" href="/">
+          <img
+            class="logo__image"
+            src="./images/берегиня.jpg"
+            alt="Берегиня"
+            width="180" height="29" loading="lazy"
+          />
+        </a>
+
+        <div class="footer__soc1als soc1als">
+          <ul class="soc1als__list">
+            <li class="soc1als__item">
+              <a class="soc1als__link" href="https://t.me/bereginya_deti">
+                <span class="visually-hidden">Telegram</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434"/>
+                </svg>
+              </a>
+            </li>
+            <li class="soc1als__item">
+              <a class="soc1als__link" href="https://chat.whatsapp.com/BGdsvsVTKjSBGH5hqprcs0">
+                <span class="visually-hidden">WhatsApp</span>                
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 128 128">
+                  <path d="M 64 2 C 29.8 2 2 29.8 2 64 C 2 74.5 4.5992188 84.800391 9.6992188 93.900391 L 4.4003906 113.30078 C 3.5003906 116.40078 4.3992188 119.60039 6.6992188 121.90039 C 8.9992188 124.20039 12.200781 125.10078 15.300781 124.30078 L 35.5 119 C 44.3 123.6 54.099609 126 64.099609 126 C 98.299609 126 126.09961 98.2 126.09961 64 C 126.09961 47.4 119.7 31.899219 108 20.199219 C 96.2 8.4992187 80.6 2 64 2 z M 64 8 C 79 8 93.099609 13.800391 103.59961 24.400391 C 114.19961 35.000391 120.1 49.1 120 64 C 120 94.9 94.9 120 64 120 C 54.7 120 45.399219 117.59922 37.199219 113.19922 C 36.799219 112.99922 36.300781 112.80078 35.800781 112.80078 C 35.500781 112.80078 35.3 112.80039 35 112.90039 L 13.699219 118.5 C 12.199219 118.9 11.200781 118.09922 10.800781 117.69922 C 10.400781 117.29922 9.6 116.30078 10 114.80078 L 15.599609 94.199219 C 15.799609 93.399219 15.700781 92.600391 15.300781 91.900391 C 10.500781 83.500391 8 73.8 8 64 C 8 33.1 33.1 8 64 8 z M 64 17 C 38.1 17 17 38 17 64 C 17 72.3 19.200781 80.4 23.300781 87.5 C 24.900781 90.3 25.3 93.599219 24.5 96.699219 L 21.599609 107.19922 L 32.800781 104.30078 C 33.800781 104.00078 34.800781 103.90039 35.800781 103.90039 C 37.800781 103.90039 39.8 104.40039 41.5 105.40039 C 48.4 109.00039 56.1 111 64 111 C 89.9 111 111 89.9 111 64 C 111 51.4 106.09922 39.599219 97.199219 30.699219 C 88.399219 21.899219 76.6 17 64 17 z M 43.099609 36.699219 L 45.900391 36.699219 C 47.000391 36.699219 48.099219 36.799219 49.199219 39.199219 C 50.499219 42.099219 53.399219 49.399609 53.699219 50.099609 C 54.099219 50.799609 54.300781 51.699219 53.800781 52.699219 C 53.300781 53.699219 53.100781 54.299219 52.300781 55.199219 C 51.600781 56.099219 50.699609 57.100781 50.099609 57.800781 C 49.399609 58.500781 48.6 59.300781 49.5 60.800781 C 50.4 62.300781 53.299219 67.1 57.699219 71 C 63.299219 76 68.099609 77.600781 69.599609 78.300781 C 71.099609 79.000781 71.900781 78.900391 72.800781 77.900391 C 73.700781 76.900391 76.5 73.599609 77.5 72.099609 C 78.5 70.599609 79.500781 70.900391 80.800781 71.400391 C 82.200781 71.900391 89.400391 75.499219 90.900391 76.199219 C 92.400391 76.899219 93.399219 77.300391 93.699219 77.900391 C 94.099219 78.700391 94.100391 81.599609 92.900391 85.099609 C 91.700391 88.499609 85.700391 91.899609 82.900391 92.099609 C 80.200391 92.299609 77.699219 93.300391 65.199219 88.400391 C 50.199219 82.500391 40.7 67.099609 40 66.099609 C 39.3 65.099609 34 58.100781 34 50.800781 C 34 43.500781 37.799219 40 39.199219 38.5 C 40.599219 37 42.099609 36.699219 43.099609 36.699219 z"></path>
+                  </svg>
+              </a>
+            </li>
+            <li class="soc1als__item">
+              <a class="soc1als__link" href="https://vk.com/id789150716">
+                <span class="visually-hidden">VK</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619c0 0-1.115 2.719-2.695 4.482c-.51.513-.743.675-1.021.675c-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504c0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836c-.743 0-2.551-2.729-3.624-5.853c-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619c0 .582.743 3.462 3.461 7.271c1.812 2.601 4.363 4.011 6.687 4.011c1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752c.324 0 .882.164 2.183 1.417c1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931c-.197-.615-.907-1.51-1.849-2.569c-.512-.604-1.277-1.254-1.51-1.579c-.325-.419-.231-.604 0-.976c.001.001 2.672-3.761 2.95-5.04"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__body">
+        <div class="footer__contacts">
+          <h2 class="footer__contacts-title h4 puddle-bg" id="contacts">Наши контакты:</h2>
+          <address class="footer__contacts-body">
+            <p>Почта: <a href="mailto:raduuga.svet@gmail.com">raduuga.svet@gmail.com</a></p>
+            <p>Номера:<br> <a href="tel:+7 988 417 32 45">+7 988 417 32 45<br></a><a href="tel:+7 918 405 32 62">+7 918 405 32 62</a></p>
+            <p>Адрес: п. Лазаревское, пер. Павлова. д. 21А, 2-й этаж<br/></p>
+          </address>
+        </div>        
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button
+        class="mobile-overlay__close-button cross-button"
+        type="submit"
+      >
+        <span class="visually-hidden">Close navigation menu</span>
+      </button>
+    </form>
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="index.html #service">Услуги</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="index.html #tarifs">Тарифы</a>
+        </li>
+      </ul>
+    </div>
+  </dialog>
+</body>
+</html>
